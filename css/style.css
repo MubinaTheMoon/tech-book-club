@@ -60,12 +60,12 @@ a{
 }
 
 html{
-    width: 100%;
+    height: 100%;
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
 body{
-    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     font-family:"Martian Mono" ;
@@ -93,11 +93,272 @@ body{
     padding-bottom: 3.2rem;
 }
 main{
+    /* background-image: url("../images/pattern-light-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    flex-grow: 1;
+}
+
+/* JOURNEY */
+.tip{
     background-image: url("../images/pattern-light-bg.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    flex-grow: 1;
+    padding: 8rem 6rem;
+    margin-bottom: 12rem;
+    border-radius:12px;
+    background:linear-gradient(150deg, #E6E1DFdd 50%, #9CC9DA 100%);
+}
+.tip h2{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.step-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: space-between;
+}
+.arrow{
+    width: 226px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+}
+.arrow span{
+    font-size: 2.4rem;
+    border: 2px solid #062630;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+}
+.step-cont p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -1px;
+}
+
+
+
+
+
+
+/* MEMBERSHIP */
+.membership{
+    margin-bottom: 12rem;
+}
+.membership-container h2{
+    text-align: center;
+    padding-bottom: 6.4rem;
+}
+.membership-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4em;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 286px;
+    height: 358px;
+    border-radius: 8px;
+    padding: 2.4rem;
+    border: 1px solid #E6E1DF;
+}
+.card h6{
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -1px;
+    padding-bottom: 2.4rem;
+}
+.price{
+    font-weight: 400;
+    font-family: "Inter";
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #385159;
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid #E6E1DF;
+    margin-bottom: 2.4rem;
+}
+.price b{
+    font-size: 3.4rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-family: "Martian Mono";
+    color: #062630;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding-bottom: 1.6rem;
+}
+.check img{
+    width: 24px;
+}
+.check p{
+    color: #385159;
+    font-family: "Inter";
+    font-size: 2rem;
+    line-height: 1.2rem;
+}
+.button{
+    display: inline-block;
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+    border: 2px solid #062630;
+    border-radius: 8px;
+    padding: 1.8rem 4rem;
+    font-weight: 600;
+    background-color: #FFF5EF;
+    transition: .3s;
+}
+.button:hover{
+    background:linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+}
+#extra-edit{
+    width: 350px;
+    height: 390px;
+    background:linear-gradient(150deg, #E6E1DF 50%, #9CC9DA 100%);
+}
+.extra-change{
+    width: 100%;
+}
+
+
+
+
+
+
+/* TESTIMONIAL */
+.testimonial-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.testars{
+    margin-bottom: 3.2rem;
+}
+.testimonial-container h4{
+    width: 100%;
+    font-size: 3.4rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+.testimonial-container p{
+    margin-bottom: 12rem;
+    color: #385159;
+    font-family: "Inter";
+    font-size: 2rem;
+    line-height: 1.3rem;
+    letter-spacing: -0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-image:url("../images/pattern-dark-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color:#062630;
+    color: #FAF5F3;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+}
+.footer-container h2{
+    width: 68.5rem;
+    font-size: 5rem;
+    line-height: 1.3;
+    letter-spacing: -2px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+.btn{
+    padding: 2rem 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+.light{
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 2.4rem;
+    transition: .5s;
+}
+.light:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, #FFE2D1 70%, #FFF5EF 100%);
+}
+.components{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 6.4rem;
+}
+.avatar{
+    width: 11rem;
+}
+.stars{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.stars img{
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.stars-comp p{
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+.copyright{
+    width: 100%;
+    border-top: 1px solid #385159;
+    padding-top: 2.4rem;
+    padding-bottom: 2.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+.icons svg path{
+    transition: .3s;
+}
+
+.icons svg:hover path{
+    fill: #385159;
 }
 
 
@@ -118,18 +379,62 @@ main{
 
 
 
+@media screen and (max-width:1287px) {
+    #extra-edit{
+        width: 286px;
+        height: 358px;
+        background:linear-gradient(150deg, #E6E1DF 50%, #9CC9DA 100%);
+    }
+    .extra-change{
+        width: 100%;
+    }
 
-
-
-
-
-
+}
 @media screen and (max-width:768px) {
     .container{
         padding-left: 3.2rem;
         padding-right: 3.2rem;
     }
 }
+@media screen and (max-width:711px) {
+    .footer-container h2{
+        width: 100%;
+        font-size: 4rem;
+    }
+    .testimonial-container h4{
+        font-size: 2.8rem;
+    }
+}
+@media screen and (max-width:505px) {
+    .footer-container h2{
+        font-size: 3rem;
+    }
+    .light{
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .copyright{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .components{
+        width: 100%;
+    }
+    .copyright p{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width:403px) {
+    .btn{
+        padding: 1.4rem 1.6rem;
+        font-size: 1.2rem;
+        gap: 0.5rem;
+    }
+    .testimonial-container h4{
+        font-size: 2.4rem;
+    }
+}
+
 @media screen and (max-width:375px) {
     .container{
         padding-left: 1.6rem;
